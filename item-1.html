@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+<div class="topnav">
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="#" class="pagina-corrente"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>
+Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+		</div>
+	</nav>
+	
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalogo.html">Catalogo</a></li>
+          <li>Item</li>
+				</ul>
+				<p><strong>PROGETTO e COSTRUZIONE:</strong></p>
+					<ul>
+            <li>1566 - 1567</li>
+            <li>1567 - 1605</li>
+          </ul>
+            
+          <p><strong>STATO DI REALIZZAZIONE:</strong></p>
+          	<ul>
+              <li>Esistente</li>
+            </ul>
+
+           <p><strong>LUOGO:</strong></p>
+           	<ul>
+              <li>Via della Rotonda 45- Vicenza</li>
+            </ul>
+           
+            <p><strong>ARTISTI:</strong></p>
+            	<ul>
+              	<li><em>Andrea Palladio: architetto / progettista</em></li>
+	                <li>Giambattista Albanese: scultore</li>
+	                <li>Anselmo Canera (?): pittore</li>
+	                <li>Louis Dorigny: pittore</li>
+	                <li>Eliodoro Forbicini (?): pittore</li>
+	                <li>Bernardino India (?): pittore</li>
+	                <li>Alessandro Maganza: pittore</li>
+	                <li>Ottaviano Ridolfi (?): stuccatore</li>
+	                <li>Lorenzo Rubini: stuccatore</li>
+	                <li>Alessandro Vittoria: scultore</li>
+	               </ul>
+            			<p><strong>COMMITTENTI:</strong></p>
+              		<ul>
+              			<li>Paolo Almerico</li>
+              		</ul>
+
+              		<p><strong>TIPOLOGIA:</strong></p>
+              		<ul>
+              			<li>Abitazioni/ Ville</li>
+              		</ul>
+
+                	<p><strong>ORDINI ARCHITETTONICI:</strong></p>
+                	<ul>
+                  	<li>Ionico: pronai</li>
+                  </ul>
+
+                  <p><strong>PARTI DEL COMPLESSO:</strong></p>
+                  <ul>
+	                  <li>Barchesse</li> 
+	                  <li>Chiesetta</li>    
+	                  <li>Corpo dominicale</li>  
+	                </ul>
+  
+                	<p><strong>SOGGETTO:</strong></p>
+                	<ul>
+                  	<li>"villa; abitazione; rotonda; capra; vicenza"</li> 
+                  </ul>       
+          
+          
+              
+
+          <div class="vedi-anche">
+          <h3>Vedi anche </h3>
+          <a href="https://mediateca.palladiomuseum.org/palladio/opera.php?id=41" target="_blank" title="Vai alla pagina Unesco dell'itinerario">• Descrizione Mediateca CISA</a>
+        </div>
+
+
+          </div>
+
+			<div class="rightcolumn"> 
+
+				<h2>La Rotonda</h2>
+				<p>Villa Almerico Capra detta "la Rotonda"</p>
+        <img src="img/rotonda.jpg" width="100%">
+        <h3>DICONO DI VILLA ALMERIGO CAPRA, "LA ROTONDA"</h3>
+        <blockquote id="quote" class="quote"><em><i class="fa fa-quote-left" aria-hidden="true"></i> Come il fauno alita la sua felicità nel flauto, così <strong>la natura esala il suo trionfo in un luogo, nel sogno del Palladio.</strong> Ora essa ha deposto lo zufolo, lo lascia imputridire al margine dello stagno. <strong>Con dolce violenza riprende la Rotonda dal cerchio delle creazioni umane nella trama mobile e ombrosa del proprio regno.</strong> Ciò che incorona la collina di Vicenza non è più un tempio, non più una casa, e più dell'uno e dell'altra. <strong>Un sogno immortale, una meta di meravigliosa forma, verso cui</strong> sembra tendersi <strong>l'anelito delle lontane montagne, l'anelito delle acque possenti,</strong> e che esso raggiunge, il cui cerchio circonda, alle cui quattro scale si stringe, placato, redento da un simbolo <i class="fa fa-quote-right" aria-hidden="true"></i>.</em>
+        	<p class="author"><strong>— Hugo von Hofmannsthal.</strong></p></blockquote>
+        
+			</div>
+<!-- div row -->
+		</div>
+
+
+
+	</section>
+
+
+	<footer>
+		<div class="credits">
+      <p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+      <p><a href="#top">Torna su</a></p>
+    </div>
+
+    <div class="copyright">
+      <p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+      <p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+    </div>
+	</footer>
+
+	<script src="js/script-tab.js"></script> 
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+		<div class="topnav">
+			<a href="#" class="pagina-corrente"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="catalogo.html"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div top nav -->
+
+		</div>
+	</nav>
+	<!-- div class hero image per gestione caratterstiche immagine -->
+	<div class="hero-image">
+
+		<div class="hero-text">
+<!-- h1 sta per heading, qui di primo livello. qui ANDREA PALLADIO è la hero page, il main focus su cui voglio attirare attenz visitatore. è una div, che individua sottosezioni all'interno di contenitori-->
+			<h1>ANDREA PALLADIO</h1>
+			<h2>Entra nel pensiero artistico di Palladio esplorando le sue opere architettoniche</h2>
+			<p> <a href="#quote" class="hero_button">Scopri di più</a></p>
+		</div>
+
+	</div>
+
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<!-- div deve essere una riga successiva + attribuiamo certa caratteristica. class row per dare proprietà che evitino il floating-->
+		<div>
+			<blockquote id="quote" class="quote">
+				<em>«V'è davvero alcunchè di <strong>divino nei suoi progetti</strong>, né meno della forza del grande poeta, che <strong>dalla verità e dalla finzione trae una terza realtà</strong>, <strong>affascinante</strong> nella sua <strong>fittizia</strong> esistenza». </em> 
+				<p class="author"><strong>- Johann Wolfgang von Goethe</strong>, <em>Viaggio in Italia, 19 settembre 1786 (Vicenza).</em> </p> 
+				<br><br>
+				<em>«...molti e <strong>superbi edifizj</strong>, ne la patria sua et altrove, che <strong>contendono</strong> con gli <strong>antichi</strong>, danno <strong>lume a' moderni</strong>, e daran <strong>meraviglia a quelli che verranno</strong>».</em>
+				<p class="author"><strong>— Daniele Barbaro</strong>, <em>I dieci libri dell'architettura di M. Vitruvio</em>, Venezia, 1556.</p>
+			</blockquote>
+		</div>
+		
+	</section>
+
+<!-- prova Image Gallery With Horizontal Scroll -->
+	<section>
+		<div class="scroll-container">
+			<h2>GALLERIA</h2>
+		</div>
+		<div class="scroll-container">
+			<img src="img/basilica-palladiana.jpg" alt="Basilica Palladiana" title=" immagine di Basilica Palladiana">
+  			<img src="img/giorgio-maggiore.jpg" alt="immagine diChiesa del monastero San Giorgio Maggiore" title="Chiesa del monastero San Giorgio Maggiore">
+  			<img src="img/olimpico.jpg" alt="Teatro Olimpico" title="immagine di Teatro Olimpico">
+  			<img src="img/pisani-lonigo.jpg" alt="Villa Pisani, Lonigo" title="immagine di Villa Pisani, Lonigo">
+  			<img src="img/rotonda.jpg" alt="Villa Almerico Capra detta la Rotonda" title="immagine di Villa Almerico Capra detta la Rotonda">
+  			<img src="img/pisani.jpg" alt="Villa Pisani, Montagnana" title="immagine di Villa Pisani, Montagnana">
+  			<img src="img/pojana.jpg" alt="Villa Pojana" title="immagine di Villa Pojana">
+  			<img src="img/redentore.jpg" alt="Chiesa del Redentore" title="immagine di Chiesa del Redentore">
+  			<img src="img/saraceno.jpg" alt="Villa Saraceno" title="immagine di Villa Saraceno">
+  			<img src="img/trissino.jpg" alt="Villa Trissino" title="immagine di Villa Trissino">
+  			<img src="img/villa-godi.jpg" alt="Villa Godi" title="immagine di Villa Godi">
+  			<img src="img/villa-serego.jpg" alt="Villa Serego" title="immagine di Villa Godi">
+  		</div>
+
+  		<div class="scroll-container">			
+  			<div class="btn-scroll">
+			 	<button type="button">
+  			 		<a href="catalogo.html">VAI AL CATALOGO </a>
+  			 	</button> 
+			</div>
+		</div>
+		
+	</section>
+
+<!-- fine prova Image Gallery With Horizontal Scroll -->	
+	<section>
+		<div class="popolari-oggi">
+		<h2>ESPLORA LE OPERE POPOLARI DI OGGI</h2>
+		<p>Visualizza e salva le opere più visitate!</p>
+		</div>
+
+<!-- prova image grid -->
+
+		<div class="image-grid-row">
+
+  			<div class="image-grid-column">
+  				<div class="container">
+  					<img src="img/rotonda.jpg" alt="Villa Almerico Capra detta la Rotonda" title="Villa Almerico Capra detta la Rotonda" class="container-image">
+  					<div class="overlay">
+  					<div class="container-text"><a href="item-1.html">
+  						Vai all'item</a></div>
+  					</div>
+  				</div>
+    			<img src="img/trissino.jpg" alt="Barchesse di Villa Trissino" title=" immagine di Villa Trissino">
+  			</div>
+
+  			<div class="image-grid-column">
+
+ <!-- Fade in Overlay che rimandi agli item -->
+  				<div class="container">
+  					<img src="img/villa-godi.jpg" alt="Villa Godi" class="container-image">
+  						<div class="overlay">
+  							<div class="container-text"><a href="item-godi.html">Vai all'item</a></div>
+  						</div>
+  				</div>
+
+    			<img src="img/pojana.jpg" alt="Villa Pojana" title="immagine di Villa Pojana">
+
+  			</div>
+  			
+  			<div class="image-grid-column">
+    			<img src="img/pisani-lonigo.jpg" alt="Villa Pisani, Lonigo" title="immagine di Villa Pisani, Lonigo">
+    			<img src="img/redentore.jpg" alt="Chiesa del Redentore" title="immagine di Chiesa del Redentore">
+    		</div>
+  		</div>  		
+	</section>
+
+	<footer>
+		<div class="credits">
+			<p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it | Dati delle opere: Mediateca CISA Palladio </p>
+			<p><a href="#top">Torna su</a></p>
+		</div>
+
+		<div class="copyright">
+			<p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+					<p>
+Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).
+</p>
+		</div>  
+
+	</footer>
+	<script src="js/script-tab.js"></script> 
+</body>
+
+</html>

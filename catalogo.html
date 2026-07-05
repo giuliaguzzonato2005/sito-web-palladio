@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+  <title>Le opere di Andrea Palladio</title>
+
+  <!-- Metadati per comunicare con il browser-->
+
+    <meta charset="utf-8">
+    <meta name="author" content="Giulia Guzzonato">
+    <meta name="title" content="L'architettura per Andrea Palladio">
+    <meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+    <meta name="subject" content="Palladio, architettura, opere">
+    <meta name="publisher" content="Giulia Guzzonato">
+    <meta name="date" content="07-2026">
+    <meta name="language" content="it">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style/stile-palladio.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+<div class="topnav">
+      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+      <a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+      <a href="#" class="pagina-corrente"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+      <a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>
+Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+          <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+          <a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+        </div>
+<!-- div dropdown -->
+      </div>
+
+      <a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+    </div>
+	</nav>
+	
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+        <div class="col-sidenav">
+  				<ul class="breadcrumb">
+  					<li><a href="index.html">Home</a></li>
+  					<li>Catalogo</li>
+  				</ul>
+
+
+<!-- prova Cascading Dropdown List -->
+        <h2>Naviga per</h2>
+        <form name="form1" id="form1" action="/action_page.php">
+          <strong>Provincia: </strong>
+          <select name="provincia" id="provincia">
+            <option value="#" selected="selected">Seleziona provincia</option>
+            <option>Vicenza</option>
+            <option>Venezia</option>
+            <option>Verona</option>
+            <option>Padova</option>
+          </select>
+
+          <br><br>
+
+          <strong>Comune: </strong>
+          <select name="comune" id="comune">
+            <option value="#" selected="selected">Seleziona comune</option>
+            <option>Montagnana</option>
+            <option>Bagnolo Lonigo</option>
+            <option>Poiana Maggiore</option>
+            <option>Agugliaro</option>
+            <option>San Pietro in Cariano</option>
+          </select>
+
+          <br><br>
+
+          <strong>Ordine alfabetico: </strong>
+          <select name="alfabetico" id="alfabetico">
+            <option value="#" selected="selected">Seleziona</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+          </select>
+
+          <br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+<!-- fine prova Cascading Dropdown List -->
+
+<!-- search bar -->
+          <br><br>
+          <p><strong>Ricerca per parole chiave:</strong></p>
+          <form class="example" action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search2" />
+              <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+
+			</div>
+    </div>
+
+			<div class="rightcolumn"> 
+
+				<h1>CATALOGO</h1>
+				<h2><u>Lasciati guidare all'interno della raccolta!</u></h2>
+        <p>Spostati nello <strong><em>spazio</em></strong> e nel <strong><em>tempo</em></strong> per conoscere le <strong>opere architettoniche</strong> di Andrea Palladio.</p>
+        <br>
+        <p>(Non dimenticare di consultare anche la sezione <strong><em>"Le mete più visitate"</em></strong> con le <strong>proposte</strong> ricevute dai nostri <strong>iscritti alla Newsletter!</strong>)</p>
+        <!-- tabs -->
+        <!-- tab links -->
+        		<div class="tab">
+<!-- controlla id defaultopen, aggiunto -->
+        			<button class="tablinks" id="defaultOpen" onclick="openCity(event, 'itinerari')"><strong><i class="fa fa-map-o" aria-hidden="true"></i>ESPLORA PER ITINERARI</strong></button>
+              
+<!-- sistema onclick -->
+        			<button class="tablinks" onclick="openCity(event, 'timeline')"><strong><i class="fa fa-clock-o" aria-hidden="true"></i>ESPLORA PER LINEA DEL TEMPO</strong></button>
+        			<button class="tablinks" onclick="openCity(event, 'mete-visitate')"><strong><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>LE METE PIU' VISITATE</strong></button>
+        		</div>
+
+		<!-- tab content -->
+        <!-- itinerari -->
+        		<div id="itinerari" class="tabcontent">
+        			<h1>La mappa</h1>
+              <p> <strong>Naviga</strong> attraverso <strong>la mappa</strong>, <strong>trova l'opera</strong> che più ti ispira e <strong>clicca su "Vai all'itinerario"</strong> per iniziare il tuo percorso!</p>
+
+<!-- inserisci mappa tappe --> 
+              <div id="map"></div>
+              <br>
+
+      	<!-- cards CONTROLLA righe 113- 271-->
+              <h1>GLI ITINERARI</h1>
+              <p>Non sai da <strong>dove iniziare? Consulta tutti gli itinerari</strong> disegnati dal sito <strong>UNESCO</strong> e fatti ispirare.</p>
+              <br>
+              <p>Per gli itinerari: Credits (obliged to state): sito ufficiale del patrimonio “Ville Palladiane”, nel rispetto delle relative note legali e condizioni di utilizzo (
+
+              <a href="https://www.vicenzavillepalladio.it/"  target="_blank" class="link-dentro-body">
+            https://www.vicenzavillepalladio.it/</a>).</p>
+              </p>
+      				<div class="row">
+            			<div class="equalcolumn">
+                    <div class="card">
+                		<div class="img img-itinerari-1"></div>
+                    <div class="container">
+        <!-- metto un attimo il dublin core, alm amx togli class= dc. ... --> 
+
+                		<h2> Le ville del basso vicentino e della bassa padovana</h2>
+                		
+                		<a href="itinerario-primo.html" class="btn default" title="Vai all'itinerario">VAI ALL'ITINERARIO</a>
+                  </div>
+
+                <!-- div card -->
+                </div>
+            <!-- div  -->
+            </div>
+
+            <div class="equalcolumn">
+
+              <div class="card">
+
+              	<div class="img img-itinerari-2"></div>
+
+                <div class="container">
+                  <h2>Le ville nel veneziano</h2>
+                  <br>
+                  <a href="#" class="btn default" title="Vai all'itinerario">VAI ALL'ITINERARIO</a>
+                </div>
+              </div>
+            </div>
+<!-- row -->
+          </div>
+
+    	<div class="row">
+
+            <div class="equalcolumn">
+
+              <div class="card">
+
+                <div class="img img-itinerari-3"></div>
+
+                <div class="container">
+                  <h4><b>La Vicenza palladiana</b></h4>
+                  <a href="#" class="btn default" title="Vai all'itinarario">VAI ALL'ITINERARIO</a>
+                </div>
+              </div>
+            </div>
+            <div class="equalcolumn">
+              <div class="card">
+                <div class="img img-itinerari-4"></div>
+                <div class="container">
+                  <h4><b>Le ville nel veronese</b></h4>
+                  <a href="#" class="btn default" title="Vai all'opera">VAI ALL'ITINERARIO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div>
+            <div class="pagination">
+              <a href="#" title="Prev">&laquo;</a>
+              <a href="#" class="active" title="1">1</a>
+              <a href="#" title="2">2</a>
+              <a href="#" title="3">3</a>
+              <a href="#" title="4">4</a>
+              <a href="#" title="5">5</a>
+              <a href="#" title="6">6</a>
+              <a href="#" title="Next">&raquo;</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- timeline -->
+        <div id="timeline" class="tabcontent">
+          <h1>TIMELINE: <span>dal 1537 al 1580</span></h1>
+
+          <div class="tab-timeline">
+
+            <div class="tab-container left">
+              
+              <div class="tab-timeline-content">
+                <h3>1537</h3>
+                <h3>VILLA GODI, VI</h3>
+                <p>Lonego di Lugo Vicentino, Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/villa-godi.jpg" alt="Villa Godi" title="immagine di Villa Godi"></div>
+                <a href="item-godi.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="#" class="btn">Vai all'itinerario</a>                
+              </div>
+
+            </div>
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1542</h3>
+                <h3>VILLA PISANI, VI</h3>
+                <p>Bagnolo di Lonigo, Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/pisani-lonigo.jpg" alt="Villa Pisani, Vicenza" title="immagine di Villa Pisani, Lonigo"></div>
+                <a href="item-pisani-lonigo.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container left">
+              
+              <div class="tab-timeline-content">
+                <h3>1546</h3>
+                <h3>BASILICA PALLADIANA, VI</h3>
+                <p>Comune di Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/basilica-palladiana.jpg" alt="Basilica Palladiana" title="immagine di Basilica Palladiana"></div>
+                <a href="item-basilica-palladiana.html" class="btn">
+                Vai all'opera</a>
+                <br>
+               <a href="#" class="btn">Vai all'itinerario</a>                
+              </div>
+
+            </div>            
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1548 ca</h3>
+                <h3>VILLA SARACENO, VI</h3>
+                <p>Agugliano, Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/saraceno.jpg" alt="Villa Saraceno" title="immagine di Villa Saraceno"></div>
+                <a href="item-villa-saraceno.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+ 
+            <div class="tab-container left">
+                
+              <div class="tab-timeline-content">
+                <h3>1549</h3>
+                <h3>VILLA POJANA, VI</h3>
+                <p>Poiana Maggiore, Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/pojana.jpg" alt="Villa Pojana" title="immagine di Villa Pojana"></div>
+                <a href="item-villa-pojana.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1552 ca</h3>
+                <h3>VILLA PISANI, PD</h3>
+                <p>Montagnana, Padova</p>
+                <div class="img-timeline">
+                <img src="img/pisani.jpg" alt="Villa Pisani Padova" title="immagine di Villa Pisani, Montagnana"></div>
+                <a href="item-villa-pisani.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container left">
+                
+              <div class="tab-timeline-content">
+                <h3>1553 ca</h3>
+                <h3>BARCHESSE DI VILLA TRISSINO, VI</h3>
+                <p>Sarego, Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/trissino.jpg" alt="Barchesse di Villa Trissino" title="immagine di Villa Trissino"></div>
+                <a href="item-trissino.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1565</h3>
+                <h3>CHIESA DI SAN GIORGIO MAGGIORE, VE</h3>
+                <p>Isola di San Giorgio Maggiore, Venezia</p>
+                <div class="img-timeline">
+                <img src="img/giorgio-maggiore.jpg" alt="Chiesa di San Giorgio Maggiore" title="immagine di Chiesa San Giorgio Maggiore"></div>
+                <a href="item-chiesa-giorgio.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="#" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container left">
+                
+              <div class="tab-timeline-content">
+                <h3>1565</h3>
+                <h3>VILLA SEREGO, VR</h3>
+                <p>San Pietro in Cariano, Verona</p>
+                <div class="img-timeline">
+                <img src="img/villa-serego.jpg" alt="Villa Serego" title="immagine di Villa Serego"></div>
+                <a href="item-villa-serego.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="#" class="btn">Vai all'itinerario</a>                
+              </div>
+
+            </div>
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1566–1567</h3>
+                <h3>LA ROTONDA, VI</h3>
+                <p>Comune di Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/rotonda.jpg" alt="Villa La Rotonda" title="immagine di Villa Almerico Capra, detta la Rotonda"></div>
+                <a href="item-1.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="itinerario-primo.html" class="btn">Vai all'itinerario</a>
+              </div>
+
+            </div>
+
+            <div class="tab-container left">
+                
+              <div class="tab-timeline-content">
+                <h3>1576</h3>
+                <h3>CHIESA DEL REDENTORE, VE</h3>
+                <p>Comune di Venezia</p>
+                <div class="img-timeline">
+                <img src="img/redentore.jpg" alt="Chiesa del Redentore" title="immagine di Chiesa del Redentore"></div>
+                <a href="item-chiesa-redentore.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="#" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+            <div class="tab-container right">
+
+              <div class="tab-timeline-content">
+                <h3>1580</h3>
+                <h3>TEATRO OLIMPICO, VI</h3>
+                <p>Comune di Vicenza</p>
+                <div class="img-timeline">
+                <img src="img/olimpico.jpg" alt="Teatro Olimpico" title="immagine di Teatro Olimpico"></div>
+                <a href="item-olimpico.html" class="btn">
+                Vai all'opera</a>
+                <br>
+                <a href="#" class="btn">Vai all'itinerario</a>                  
+              </div>
+
+            </div>
+
+          </div>
+
+               
+<!-- pagination -->
+          <div>
+            <div class="pagination">
+              <a href="#" title="Prev">&laquo;</a>
+              <a href="#" class="active" title="1">1</a>
+              <a href="#" title="2">2</a>
+              <a href="#" title="3">3</a>
+              <a href="#" title="4">4</a>
+              <a href="#" title="5">5</a>
+              <a href="#" title="6">6</a>
+              <a href="#" title="Next">&raquo;</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+ <!-- mete più visitate -->
+        <div id="mete-visitate" class="tabcontent">
+          <h2>LE METE PIU' VISITATE</h2>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/redentore.jpg">
+                <img src="img/redentore.jpg" alt="Chiesa del Redentore" title="immagine di Chiesa del Redentore">
+              </a>
+              <div class="desc"><p><strong>CHIESA DEL REDENTORE, VENEZIA</strong></p>
+              <p>
+                <button><a href="#">VAI ALL'ITEM</a></button>
+              </p></div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/olimpico.jpg">
+                <img src="img/olimpico.jpg" alt="Teatro olimpico" title="immagine Teatro Olimpico">
+              </a>
+              <div class="desc"><p><strong>TEATRO OLIMPICO, VICENZA</strong></p>
+              <p>
+                <button><a href="#" >VAI ALL'ITEM</a></button>
+                </p></div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/basilica-palladiana.jpg">
+                <img src="img/basilica-palladiana.jpg" alt="Basilica Palladiana" title="immagine di Basilica Palladiana">
+              </a>
+              <div class="desc"><p><strong>BASILICA PALLADIANA, VICENZA</strong></p>
+              <p>
+                <button><a href="#" >VAI ALL'ITEM</a></button>
+                </p></div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img/giorgio-maggiore.jpg">
+                <img src="img/giorgio-maggiore.jpg" alt="San Giorgio Maggiore" title="immagine di San Giorgio Maggiore">
+              </a>
+              <div class="desc"><p><strong>CHIESA DEL MONASTERO SAN GIORGIO MAGGIORE, VENEZIA</strong></p>
+              <p>
+                <button><a href="#" >VAI ALL'ITEM</a></button>
+                </p></div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+
+<!-- pagination -->
+          <div>
+            <div class="pagination">
+              <a href="#" title="Prev">&laquo;</a>
+              <a href="#" class="active" title="1">1</a>
+              <a href="#" title="2">2</a>
+              <a href="#" title="3">3</a>
+              <a href="#" title="4">4</a>
+              <a href="#" title="5">5</a>
+              <a href="#" title="6">6</a>
+              <a href="#" title="Next">&raquo;</a>
+            </div>
+          </div>
+
+        </div>
+       
+<!-- div righcolumn -->
+			</div>
+<!-- div row -->
+		</div>
+
+
+        			
+
+	</section>
+
+
+	<footer>
+		<div class="credits">
+      <p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+      <p><a href="#top">Torna su</a></p>
+    </div>
+
+    <div class="copyright">
+      <p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+      <p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+    </div>
+	</footer>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="js/script-tab.js"></script> 
+ 
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+		<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+		<div class="topnav">
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="#" class="pagina-corrente"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+		</div>
+	</nav>
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalogo.html">Catalogo</a></li>
+					<li>Primo itinerario</li>
+				</ul>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br>
+
+
+				<div class="vedi-anche">
+					<h3>Vedi anche </h3>
+					<a href="https://www.vicenzavillepalladio.it/organizza-la-tua-visita/itinerario-delle-ville-del-palladio-le-ville-del-basso-vicentino-e-della-bassa-padovana/" target="_blank" title="Vai alla pagina Unesco dell'itinerario">• Guida UNESCO al percorso</a>
+				</div>
+			</div>
+
+			<div class="rightcolumn"> 
+
+				<h2>PRIMO ITINERARIO: tra Vicenza e Padova</h2>
+				<p>Le ville palladiane del basso vicentino e della bassa padovana</p>
+				<div id="map2"> </div>
+				<br>
+				
+
+
+				<div>
+					<button class="accordion"><strong>PRIMA TAPPA</strong></button>
+					<div class="panel">
+						<br>
+  						<img src="img/rotonda.jpg" alt="La Rotonda" title="immagine La Rotonda">
+  						<p> <a href="item-1.html" class="btn">Vai all'opera</a></p>
+  						<br>
+					</div>
+
+					<button class="accordion"><strong>SECONDA TAPPA</strong></button>
+					<div class="panel">
+						<br>
+  						<img src="img/saraceno.jpg" alt="Villa Saraceno" title="immagine di Villa Saraceno"><p> <a href="item-2.html" class="btn">Vai all'opera</a> </p>
+					</div>
+
+					<button class="accordion"><strong>TERZA TAPPA</strong></button>
+					<div class="panel">
+  						<br>
+  						<img src="img/pojana.jpg" alt="Villa Pojana" title="immagine di Villa Pojana"> <p> <a href="item-3.html" class="btn">Vai all'opera</a> </p>
+					</div>
+
+					<button class="accordion"><strong>QUARTA TAPPA</strong></button>
+					<div class="panel">
+  						<br>
+  						<img src="img/pisani.jpg" alt="Villa Pisani, Montagnana" title="immagine di Villa Pisani, Montagnana"><p> <a href="item-4.html" class="btn">Vai all'opera</a></p>
+					</div>
+
+					<button class="accordion"><strong>QUINTA TAPPA</strong></button>
+					<div class="panel">
+  						<br>
+  						<img src="img/pisani-lonigo.jpg" alt="Villa Pisani, Lonigo" title="immagine di Villa Pisani, Lonigo">
+  						<p> <a href="item-5.html" class="btn">Vai all'opera</a> </p>
+					</div>
+
+					<button class="accordion"><strong>SESTA TAPPA</strong></button>
+					<div class="panel">
+  						<br>
+  						<img src="img/trissino.jpg" alt="Villa Trissino" title="immagine delle barchesse di Villa Trissino">
+  						<p> <a href="item-6.html" class="btn">Vai all'opera</a> </p>
+					</div>
+
+
+
+<!-- div right column -->
+				</div>
+<!-- div row -->
+		</div>
+
+	</section>
+
+<footer>
+		<div class="credits">
+			<p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+			<p><a href="#top">Torna su</a></p>
+		</div>
+
+		<div class="copyright">
+			<p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+			<p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+		</div> 
+</footer>
+
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="js/script-tab.js"></script> 
+</body>
+
+</html>
+
+

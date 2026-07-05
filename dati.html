@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+<div class="topnav">
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="catalogo.html"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="#" class="pagina-corrente"><i class="fa fa-table" aria-hidden="true"></i>
+Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+		</div>
+	</nav>
+	
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+    <div class="row">
+      <div class="leftcolumn">
+
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Dati</li>
+        </ul>
+
+        <div>
+        	<br>
+          <h3>DOWNLOAD</h3>
+<!-- per scaricare la tabella dei dati csv -->
+					
+          <button class="data-button"> <a href="dati.csv"> Dati CSV </a></button>
+        	
+        </div>
+
+      </div>
+
+      <div class="rightcolumn"> 
+        <h2>DATI</h2>	
+<!-- tabella dati. th cella intestazione, tr cella dati (?) -->
+				<div class="tab-dati">
+	        <table>
+	          <tr>
+	            <th>TITOLO</th>
+	            <th>PROGETTO</th>
+	            <th>COSTRUZIONE</th>
+	            <th>STATO</th>
+	            <th>LUOGO</th>
+	            <th>ARTISTI</th>
+	            <th>COMMITTENTI</th>
+	            <th>TIPO</th>
+	            <th>ORDINI ARCHITETTONICI</th>
+	            <th>PARTI DEL COMPLESSO</th>
+	            <th>SOGGETTO</th>
+	            <th>IMMAGINE</th>
+	            <th>INDIRIZZO</th>
+	          </tr>
+
+	<!-- tr primo item -->
+	          <tr> 
+	            <td>Basilica Palladiana, VI</td>
+	            <td>1546 - 1549</td>
+	            <td>1549 - 1614</td>
+	            <td>Esistente</td>
+	            <td>Piazza dei Signori- Vicenza</td>
+	            <td>Andrea Palladio: architetto</td>
+	            <td>
+	            	<ul>
+	            		<li>Rappresentanti del Consiglio cittadino di Vicenza;</li>
+	            		<li>Amministrazione pubblica della città</li>
+	            	</ul>
+	            </td>
+	            <td>Opera pubblica</td>
+	            <td>Dorico;Ionico</td>
+	            <td>Loggiato a serliane a rivestimento del preesistente Palazzo della Ragione</td>
+	            <td>"basilica; vicenza"</td>	            
+	            <th><a href="#"><img src="#" style="#"> </a> Img item 1</th>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+
+	          <tr> 
+	            <td>Chiesa del monastero San Giorgio Maggiore, VE</td>
+	            <td>1565</td>
+	            <td>1565 - 1576</td>
+	            <td>Incompiuto</td>
+	            <td>Isola di San Giorgio Maggiore- Venezia</td>
+	            <td> Andrea Palladio: architetto</td>
+	            <td>Congregazione di Santa Giustina</td>
+	            <td>Chiesa</td>
+	            <td>Corinzio</td>
+	            <td>
+	            	<ul>
+	            		<li>Navata principale voltata a botte e controventata da tre volte a crociera;</li>
+	            		<li>Absidi;</li>
+	            		<li>Cupola su tamburo;</li>
+	            		<li>Presbiterio</li>
+	            	</ul>
+	            </td>
+	            <td>"chiesa; monastero; venezia"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 2</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr> 
+	            <td>Teatro Olimpico, VI</td>
+	            <td>1580</td>
+	            <td>1580 - 1584</td>
+	            <td>Incompiuto</td>
+	            <td>Piazza Matteotti- Vicenza</td>
+	            <td>Andrea Palladio: architetto/ progettista</td>
+	            <td>Accademia Olimpica</td>
+	            <td>
+	            	<ul>
+	            		<li>Opera pubblica;</li>
+	            		<li>Teatro</li>
+	            	</ul>
+	            </td>	
+	            <td></td>
+	            <td>
+	            	<ul>
+	            		<li>Progetto palladiano: unica prospettiva centrale;</li>
+	            		<li>Cesura delle due ali di muro;</li>
+	            		<li>Soffitto alla ducale</li>
+	            	</ul>
+	            </td>
+	            <td>"teatro; opera; olimpico; vicenza"</td>                       
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Pisani, VI</td>
+	            <td>1542</td>
+	            <td>1542 - 1545</td>
+	            <td>Esistente</td>
+	            <td>Via Risaie 1-  Bagnolo Lonigo VI</td>
+	            <td>
+	            	<ul>
+	            		<li>Francesco Torbido: pittore;</li>
+	            		<li>Ignoto fine XVI secolo: pittore;</li>
+	            		<li>Andrea Palladio: architetto/ progettista</li>
+	            	</ul>
+	            </td>
+	            <td>
+	            	<ul>
+	            		<li>Daniele Pisani;</li>
+	            		<li>Marco Pisani;</li>
+	            		<li>Vettore Pisani</li>
+	            	</ul>
+	            </td>
+	            <td>Abitazioni/Palazzi</td>	
+	            <td>Dorico</td>
+	            <td>
+	            	<ul>
+	            		<li>Barchesse piegate ad angolo retto;</li>
+	            		<li>Colombara;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Cortile;</li>
+	            		<li>Torre;</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; palazzo; pisani; lonigo; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Pisani, PD</td>
+	            <td>1552</td>
+	            <td>1552 - 1555</td>
+	            <td>Esistente</td>
+	            <td>Via Borgo Eniano 1- Montagnana PD</td>
+	            <td>
+	            	<ul>
+	            		<li>Andrea Palladio: architetto/ progettista;</li>
+	            		<li>Alessandro Vittoria: scultore</li>	            		
+	            	</ul>
+	            </td>
+	            <td>Francesco Pisani</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Dorico;Ionico</td>
+	            <td>
+	            	<ul>
+	            		<li> Archi laterali;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Muro di cinta</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; pisani; montagnana; padova"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Pojana, VI</td>
+	            <td>1549</td>
+	            <td>1549 - 1563</td>
+	            <td>Esistente</td>
+	            <td>Via Castello 43- Poiana Maggiore VI</td>
+	            <td>
+	            	<ul>
+	            		<li>Andrea Palladio: architetto/ progettista;</li>
+	            		<li>Anselmo Canera: pittore;</li>
+	            		<li>Girolamo Albanese: pittore;</li>
+	            		<li>Bernardino India: pittore;</li>
+	            		<li>Bartolomeo Ridolfi: pittore;</li>	
+	            		<li>Battista Zelotti: pittore</li>            		
+	            	</ul>
+	            </td>
+	            <td>Bonifacio Poiana</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Dorico</td>
+	            <td>
+	            	<ul>
+	            		<li> Barchesse piegate ad angolo retto: parzialmente costruite;</li>
+	            		<li>Brolo: distrutto;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Cortile: non costruito;</li>
+	            		<li>Giardino: distrutto;</li>
+	            		<li>Muro di cinta;</li>
+	            		<li>Peschiera: distrutta;</li>
+	            		<li>Portale di accesso al complesso</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; poiana; pojana; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Chiesa del Redentore, VE</td>
+	            <td>1576</td>
+	            <td>1577 - 1586</td>
+	            <td>Esistente</td>
+	            <td>Campo SS. Redentore 195- Giudecca- Venezia</td>
+	            <td>Andrea Palladio: architetto/ progettista</td>
+	            <td>Consiglio dei Rogadi</td>
+	            <td>Chiesa</td>	
+	            <td>Ordini intersecati</td>
+	            <td>
+	            	<ul>
+	            		<li> Navata rettangolare;</li>
+	            		<li>Cappelle laterali: ripresa forma a nartece;</li>
+	            		<li>Cupola;</li>
+	            		<li>Facciata</li>
+	            	</ul>
+	            </td>
+	            <td>"chiesa; redentore; venezia"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Almerico Capra detta "la Rotonda", VI</td>
+	            <td>1566-1567</td>
+	            <td>1567 - 1605</td>
+	            <td>Esistente</td>
+	            <td>Via della Rotonda 45- Vicenza</td>
+	            <td>
+	            	<ul>
+	            		<li>Giambattista Albanese: scultore;</li>
+	            		<li>Anselmo Canera (?): pittore;</li>
+	            		<li>Louis Dorigny: pittore;</li>
+	            		<li>Eliodoro Forbicini (?): pittore;</li>
+	            		<li>Bernardino India (?): pittore;</li>
+	            		<li>Alessandro Maganza: pittore;</li>
+	            		<li>Andrea Palladio: architetto/ progettista;</li>
+	            		<li>Ottaviano Ridolfi (?): stuccatore;</li>
+	            		<li>Lorenzo Rubini: stuccatore;</li>
+	            		<li>Alessandro Vittoria: scultore</li>
+	            	</ul>
+	            </td>
+	            <td>Consiglio dei Rogadi</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Ionico: pronai</td>
+	            <td>
+	            	<ul>
+	            		<li> Barchesse;</li>
+	            		<li>Chiesetta;</li>
+	            		<li>Corpo dominicale</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; rotonda; capra; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Saraceno VI</td>
+	            <td>1548 ca</td>
+	            <td>1548 - ante 1555</td>
+	            <td>Esistente</td>
+	            <td>Via Finale 8- Finale Agugliaro VI</td>
+	            <td>Andrea Palladio: architetto</td>
+	            <td>Biagio Saraceno</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>romano antico</td>
+	            <td>
+	            	<ul>
+	            		<li>Barchesse piegate ad angolo retto;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Muro di cinta;</li>
+	            		<li>Stalle;</li>
+	            		<li>Torre</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; saraceno;finale; agugliaro; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Barchesse di Villa Trissino, Sarego VI</td>
+	            <td>1553 ca e 1567</td>
+	            <td>
+	            	<ul>
+	            		<li>1553 - 1554;</li>
+	            		<li>1575</li>
+	            	</ul>
+	            </td>
+	            <td>Incompiuto</td>
+	            <td>Meledo- Sarego VI</td>
+	            <td>
+	            	<ul>
+	            		<li>Eliodoro Forbicini: pittore;</li>
+	            		<li>Andrea Palladio: architetto</li>
+	            	</ul>
+	            </td>
+	            <td>
+	            	<ul>
+	            		<li>Francesco Trissino;</li>
+	            		<li>Ludovico Trissino</li>
+	            	</ul>
+	            </td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Tuscanico: barchesse</td>
+	            <td>
+	            	<ul>
+	            		<li>Barchesse curvilinee;</li>
+	            		<li>Barchesse piegate ad angolo retto;</li>
+	            		<li>Colombara;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Muro di cinta;</li>
+	            		<li>Portale di accesso al complesso;</li>
+	            		<li>Portico</li>
+	            	</ul>
+	            </td>
+	            <td>"barchesse; villa; abitazioni; trissino; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+
+	          <tr>
+	            <td>Villa Godi, VI</td>
+	            <td>1537</td>
+	            <td>1539 - 1557</td>
+	            <td>Esistente</td>
+	            <td>Via Palladio 44- Lonedo- Lugo Vicentino VI</td>
+	            <td>
+	            	<ul>
+	            		<li>Battista del Moro: pittore;</li>
+	            		<li>Gualtiero Padovano: pittore;</li>
+	            		<li>Andrea Palladio: architetto/ progettista;</li>
+	            		<li>Battista Zelotti: pittore</li>
+	            	</ul>
+	            </td>
+	            <td>Girolamo Godi</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Dorico</td>
+	            <td>
+	            	<ul>
+	            		<li>Ali;</li>
+	            		<li>Barchesse rettilinee;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Cortile;</li>
+	            		<li>Esedra;</li>
+	            		<li>Giardino;</li>
+	            		<li>Portale di accesso al complesso;</li>
+	            		<li>Pozzo;</li>
+	            		<li>Stalle</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; lugo; lonego; vicenza"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>
+
+	          <tr>
+	            <td>Villa Serego, VR</td>
+	            <td>1565</td>
+	            <td>1565 - 1585 ca</td>
+	            <td>Trasformato</td>
+	            <td>Via S. Sofia 1/2/4/6/8- Santa Sofia Pedemonte- San Pietro in Cariano VR</td>
+	            <td>Andrea Palladio: architetto</td>
+	            <td>Marc'Antonio Sarego</td>
+	            <td>Abitazioni/Ville</td>	
+	            <td>Dorico;Ionico</td>
+	            <td>
+	            	<ul>
+	            		<li>Barchesse rettilinee;Fontane</li>
+	            		<li>Colombara;</li>
+	            		<li>Colonnato;</li>
+	            		<li>Corpo dominicale;</li>
+	            		<li>Cortile;</li>
+	            		<li>Esedra;</li>
+	            		<li>Fontane</li>
+	            	</ul>
+	            </td>
+	            <td>"villa; abitazione; sarego; serego; verona"</td>
+	            <td><a href="#"><img src="#" style="#"> </a> Img item 3</td>
+	            <td> <a href="#">Link all'item</a></td>
+	          </tr>	          
+
+	        </table>
+	      </div>
+
+
+      </div>
+
+
+<!-- div row -->
+    </div>
+
+	</section>
+
+
+	<footer>
+		<div class="credits">
+			<p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+			<p><a href="#top">Torna su</a></p>
+		</div>
+
+		<div class="copyright">
+			<p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+			<p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+		</div> 
+
+	</footer>
+
+	<script src="js/script-tab.js"></script> 
+
+</body>
+
+</html>

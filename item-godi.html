@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+		<div class="topnav">
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="progetto.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="#" class="pagina-corrente"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>
+Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+		</div>
+	</nav>
+	
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="catalogo.html">Catalogo</a></li>
+          <li>Item</li>
+				</ul>			
+  <p><strong>PROGETTO:</strong></p>
+				<ul>
+          <li>1537</li>
+        </ul>
+        <p><strong>COSTRUZIONE:</strong></p>
+        <ul>
+        	<li>1539 - 1557</li>
+        </ul>
+        <p><strong>STATO DI REALIZZAZIONE:</strong></p>
+        <ul>
+					<li>Esistente</li>
+				</ul>
+        <p><strong>LUOGO:</strong></p>
+        <ul>
+         <li>Via Palladio 44- Lonedo- Lugo Vicentino VI</li>
+        </ul>
+        <p><strong>ARTISTI:</strong></p>
+        <ul>
+          <li><em>Andrea Palladio: architetto / progettista</em></li> 
+          <li>Battista del Moro: pittore</li>
+	         <li>Gualtiero Padovano: pittore</li>
+	         <li>Battista Zelotti: pittore</li>
+	       </ul>
+	        <p><strong>COMMITTENTI:</strong></p>
+	        <ul>
+	         <li>Girolamo Godi</li>
+	        </ul>
+					<p><strong>TIPOLOGIA:</strong></p>
+	        <ul>
+	          <li>Abitazioni/ Ville</li>
+	        </ul>
+	          <p><strong>ORDINI ARCHITETTONICI:</strong></p>
+	            <ul>
+	              <li>Dorico</li>
+	            </ul>
+	            <p><strong>PARTI DEL COMPLESSO:</strong></p>
+	            <ul>
+	                  <li>Ali</li> 
+	                  <li>Barchesse rettilinee</li>    
+	                  <li>Corpo dominicale</li>  
+	                  <li>Cortile</li>
+	                  <li>Esedra</li>
+	                  <li>Giardino</li>
+	                  <li>Portale di accesso al complesso</li>
+	                  <li>Pozzo</li>
+	                  <li>Stalle</li>
+	            </ul>
+	            <p><strong>SOGGETTO:</strong></p>
+	            <ul>
+	                  <li>"villa; abitazione; lugo; lonego; vicenza"</li>
+	            </ul>        
+             
+                    
+
+          <div class="vedi-anche">
+          <h3>Vedi anche </h3>
+          <a href="https://mediateca.palladiomuseum.org/palladio/opera.php?id=54" target="_blank" title="Vai alla pagina Unesco dell'itinerario">• Descrizione Mediateca CISA</a>
+        </div>
+
+
+     	</div>
+
+			<div class="rightcolumn"> 
+
+				<h2>VILLA GODI</h2>
+				<p>Lonego di Lugo Vicentino, Vicenza. </p>
+        <img src="img/villa-godi.jpg" alt="Villa Godi" title="immagine di Villa Godi" width="100%">
+        <h3>DICONO DI VILLA GODI:</h3>
+        <blockquote id="quote" class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i> <em>IN LONEDO luogo del Vicentino è la seguente <strong>fabbrica del Signor Girolamo de Godipo</strong>- sta <strong>sopra un colle di bellissima vista, e accanto un fiume</strong>. Per rendere questo <strong>sito comodo per l’uso di Villa</strong> vi sono stati fatti cortili, e strade sopra volti con non picciola spesa.
+La fabbrica di mezzo è per l'abitazione del padrone, e della famiglia. Le stanze del padrone hanno il piano loro alto da terra tredici piedi, e sono in solaro, sopra queste si sono i granari, e nella parte di sotto, cioè nell'altezza dei tredici piedi vi sono disposte le cantine, i luoghi da fare i vini, la cucina, e altri luoghi simili. La Sala giunge con la sua altezza fin sotto il tetto, e ha due ordini di finestre.
+Dall’uno e l'altro lato di questo corpo di fabbrica vi sono i cortili, e i coperti per le cose di Villa. <strong>E' stata questa fabbrica ornata di pitture di bellissima invenzione da Messer Gualtiero Padovano, da Messer Battista del Moro Veronese, & da Messer Battista Veneziano; </strong> perché <strong>questo Gentiluomo</strong>, il
+quale è <strong>giudiziosissimo, per ridurla a quella eccellenza e perfezione, che sia possibile; non ha guardato a spesa alcuna, e ha scelto i più singolari, e eccellenti Pittori dei nostri tempi</strong> <i class="fa fa-quote-right" aria-hidden="true"></i>.</em>
+        <p><strong>- Andrea Palladio</strong>, <em>I Quattro libri dell'architettura di Andrea Palladio, Libro II, cap. cap. XIIII. Dei disegni di case di villa di alcuni nobili Venetiani</em>. Venezia, 1570.</p></blockquote>
+        
+        
+			</div>
+<!-- div row -->
+		</div>
+
+
+
+	</section>
+
+
+	<footer>
+		<div class="credits">
+      <p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+      <p><a href="#top">Torna su</a></p>
+    </div>
+
+    <div class="copyright">
+      <p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+      <p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+    </div>
+	</footer>
+
+	<script src="js/script-tab.js"></script> 
+
+</body>
+
+</html>

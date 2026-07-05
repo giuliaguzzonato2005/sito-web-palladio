@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- title fa comparire quello che sta nella barra titolo del browser -->
+	<title>Le opere di Andrea Palladio</title>
+
+	<!-- Metadati per comunicare con il browser-->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Giulia Guzzonato">
+		<meta name="title" content="L'architettura per Andrea Palladio">
+		<meta name="description" content="Sito dedicato alla produzione architettonica di Andrea palladio">
+		<meta name="subject" content="Palladio, architettura, opere">
+		<meta name="publisher" content="Giulia Guzzonato">
+		<meta name="date" content="07-2026">
+		<meta name="language" content="it">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- controlla se è giusto il link rel font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style/stile-palladio.css">
+
+
+</head>
+
+<body>
+	<header id="top">
+
+<!-- aggiungo class header alla div di header per collegare css. Header da pov formattazione contiene elem semantico header che contiene una sezione, la quale appartiene a una certa classe dal pov della formattazione (che si chiama "header"--> 
+
+		<div class="header">
+<!-- a href perché header mi riporti sempre all'index -->
+			<a href="index.html">
+
+<!-- inserisci immagine header. alt serve per lo screen reader, title per far comparire la didascalia passandoci sopra il mouse -->
+				<img src="img/header.jpg" alt="center responsive" title="Dettaglio su Andrea Palladio">
+			</a>
+
+		</div>
+
+	</header>
+
+	<nav>
+<!-- aggiungo class topnav alla div di nav per collegare css. Attribuiamo alla div contenuta dentro l'elem semantico nav la class "topnav"  -->
+		<div class="topnav">
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+			<a href="#" class="pagina-corrente"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>Progetto</a>
+			<a href="catalogo.html"><i class="fa fa-archive" aria-hidden="true"></i>Catalogo</a>
+			<a href="dati.html"><i class="fa fa-table" aria-hidden="true"></i>Dati</a>
+
+<!-- esempio di dropdown, se vuo toglierlo inserisci <a href="#">Servizi</a> -->
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-globe" aria-hidden="true"></i>Esplora
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>Eventi</a>
+					<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>Newsletter</a>
+					<a href="#"><i class="fa fa-certificate" aria-hidden="true"></i>L'Esperto consiglia</a>
+				</div>
+<!-- div dropdown -->
+			</div>
+
+			<a href="#about" class="split"><i class="fa fa-user-plus" aria-hidden="true"></i>Accedi</a>
+<!-- div topo nav -->
+
+		</div>
+	</nav>
+
+<!-- Le section tipicamente hanno un contenuto -->
+	<section>
+		<div class="row">
+			<div class="leftcolumn">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li>Progetto</li>
+				</ul>
+
+				<div class="vertical-menu">
+					<h2><strong>INDICE</strong></h2>
+					<a href="#brief">BRIEF</a>
+					<a href="#benchmark">BENCHMARK</a>
+					<a href="#struttura">STRUTTURA</a>
+					<a href="#layout">LAYOUT</a>
+					<a href="#usabilita">USABILITA'</a>
+					<a href="#servizi">SERVIZI</a>
+					<a href="#bibliografia">BIBLIOGRAFIA E SITOGRAFIA</a>
+				</div>
+
+
+
+			</div>
+
+			<div class="rightcolumn">
+				<h1>WEB PROJECT PLAN</h1>
+				<h2 id="brief" class="brief"> <i class="fa fa-arrow-right" aria-hidden="true"></i> BRIEF </h2>
+
+				<h3>Obiettivi formativi</h3>
+				<p>L’<strong>obiettivo</strong> di questo progetto è realizzare un <strong>sito web</strong> con un’<strong>interfaccia accattivante e non datata</strong> che permetta la <strong>consultazione</strong> delle <strong>opere architettoniche di Andrea Palladio, contestualizzate nel territorio e nello spazio</strong>, in modo tale da <strong>valorizzare il patrimonio culturale</strong> del nostro Paese (tramite i <strong>percorsi</strong> prestabiliti dal sito <strong>UNESCO</strong>, una <strong>linea temporale</strong> e una <strong>sezione</strong> dove gli <strong>utenti</strong> possano prendere parte alla valorizzazione delle opere), <strong>accessibile</strong> ad esperti o a chi vuole visitare la zona.</p>
+
+				<h3>Finalità del progetto</h3>
+				<p>La <strong>finalità</strong> della risorsa è rivolta all’offerta di una <strong>navigazione semplice e accessibile del patrimonio artistico dell’architetto Andrea Palladio</strong>, collocando le <strong>opere architettoniche</strong> dell’artista <strong>in un preciso contesto</strong> (ad esempio geografico e temporale). Il Sito web sarebbe, inoltre, <strong>consultabile da qualsiasi Device</strong> (suggerendo però l’uso di computer) che permetta una <strong>navigazione fluida, organizzata e semplice, comprensibile </strong> anche a e da chi non è esperto di architettura.</p>
+				<h3>Ambito disciplinare</h3>
+				<p>Il principale <strong>ambito</strong> disciplinare che interessa la raccolta è quello <strong>artistico- architettonico</strong>. </p>
+
+				<h3>Uso dei media e accesso</h3>
+				<p>Il progetto è stato pensato per essere consultato da un <strong>pubblico ampio</strong>, dagli appassionati di architettura all’utente medio o chiunque desideri <strong>conoscere la storia del territorio tramite le opere architettoniche di Andrea Palladio</strong>.</p> 
+				<p>All’utente è reso possibile un <strong>accesso libero a una raccolta di immagini</strong> (accompagnata da <strong>metadati e dati</strong>) che si adatti ai vari mezzi di comunicazione (<strong>PC, tablet e smartphone</strong>) per <strong>facilitare la consultazione</strong> delle risorse tramite Devices sia riservati all’uso domestico che portatile, in loco, visitando le opere architettoniche. Nonostante questo, <strong>alcune pagine</strong> del sito possiedono degli elementi che si adattano meglio a una <strong>consultazione da computer</strong>, per cui si consiglia una prima visita tramite il suddetto dispositivo.</p>
+				<p><strong>Con</strong> la possibilità di una <strong>futura implementazione</strong>, all’interno del progetto si è pensato di aggiungere una sezione <strong>“Accedi"</strong>, per garantire un’<strong>esperienza personalizzata</strong> all’<strong>utente</strong> e che tenga in considerazione quelle che sono le sue <strong>preferenze</strong> (l’utente avrebbe così la possibilità sia di <strong>salvare</strong> le opere nei suoi <strong>“Preferiti”</strong>, come di visualizzare la <strong>Newsletter</strong> o la sezione <strong>“L’esperto consiglia”</strong>, entrando all’interno della community; allo stesso modo, avrebbe la possibilità di <strong>partecipare attivamente alla valorizzazione degli item presenti nel catalogo</strong>- si veda la sezione <strong>“Le mete più visitate”</strong>). In generale, il sito rimane comunque <strong>consultabile da e accessibile a chiunque navighi sul Web.</strong></p>
+					<p>Il progetto presenta quindi un <strong>design multipiattaforma</strong>, ma preferisce una <strong>prima consultazione con un computer fisso</strong> per apprezzare meglio le risorse fornite.</p>
+				
+				<h3>Tipologia di risorse</h3>
+				<p>Le <strong>risorse</strong> fornite dal sito web variano dalla <strong>forma grafica</strong> (immagini delle mete), alla <strong>forma testuale </strong> (metadati). La presenza di <strong> mappe geografiche navigabili </strong> e <strong>timeline interattive</strong> permette una <strong>consultazione partecipata e attiva dal lato utente</strong>, il quale può navigare i contenuti seguendo sia <strong>itinerari prestabiliti</strong> sia in base a un’<strong>organizzazione temporale.</strong> </p>
+
+				<h3>Contenuti</h3>
+				<p>I <strong>contenuti</strong> sono stati presi principalmente <strong>dal sito ufficiale UNESCO</strong> dedicato ad Andrea Palladio, il quale <em>permette la <strong>libera condivisione, riproduzione, distribuzione, comunicazione</strong> al pubblico, <strong>esposizione</strong> al pubblico, rappresentazione, esecuzione e recitazione del materiale da esso presentato <strong>con qualsiasi mezzo e formato e la modifica</strong> (trasformazione del materiale e utilizzo per opere derivate) per <strong>qualsiasi fine</strong>, anche commerciale, “con il solo onere di attribuzione, <strong>senza</strong> apporre <strong>restrizioni aggiuntive</strong>”.</em> I suoi <strong>dati, documenti e informazioni pubblicati</strong> sul sito sono <strong>rilasciati con licenza CC_BY 4.0.</strong></p>
+
+				<p>Condizioni da rispettare:</p>
+				<ul class="ul-proj">
+						<li><strong>Attribuzione:</strong> fornire una <strong>menzione di paternità adeguata</strong> (nome dell'autore), un <strong>link alla licenza</strong> e <strong>indicare</strong> se sono state effettuate <strong>modifiche.</strong> Si veda <a href="https://creativecommons.org/licenses/by/4.0/deed.it" title="Vai al CC licenses" target="_blank"><u>https://creativecommons.org/licenses/by/4.0/deed.it</u></a> </li>
+						<li><strong>Nessuna restrizione aggiuntiva:</strong> non puoi imporre condizioni legali o misure tecnologiche che limitino gli utilizzi concessi dalla licenza. Si veda<a href="https://interoperable-europe.ec.europa.eu/licence/creative-commons-attribution-40-international-cc-40" target="_blank" title="Vai al sito"> <u>https://interoperable-europe.ec.europa.eu/licence/creative-commons-attribution-40-international-cc-40</u></a></li> 
+				</ul>
+				<p>I <strong>metadati e dati descrittivi</strong> dei singoli <strong>item</strong>, invece, sono da attribuire al <strong>catalogo della Mediateca del Centro Internazionale di Studi di Architettura Andrea Palladio</strong>, il cui sito applica delle <strong>restrizioni nell’utilizzo</strong> dei materiali solo per quanto riguarda le <strong>immagini</strong>; pertanto, per il <strong>repertorio grafico</strong> ho attinto dalle <strong>risorse</strong> digitali offerte da <strong>Wikipedia</strong>, che permette la <strong>ricondivisione con la licenza Creative Commons.</strong></p> 
+				<p>Per l’attribuzione di copyright delle immagini, <strong>vedi la sezione “Bibliografia e sitografia”.</strong></p>
+
+
+				<h2 id="benchmark" class="benchmark"><i class="fa fa-arrow-right" aria-hidden="true"></i> BENCHMARK </h2>
+				<p>Sul Web esistono già <strong>numerosi siti dedicati ad Andrea Palladio</strong>, dai <strong>portali specifici</strong> riservati alle <strong>singole opere architettoniche</strong> a veri e propri <strong>cataloghi</strong> che raccolgono l’<strong>intera produzione dell’architetto.</strong> </p>
+				<h3 class="link"><a href="https://mediateca.palladiomuseum.org/palladio/opere.php?V=m" title="Vai al catalogo del Palladio museum" target="_blank">Palladio museum</a></h3>
+				<p>La <strong>mediateca del Centro Internazionale di Studi di Architettura Andrea Palladio</strong> rappresenta una delle principali fonti per lo studio dell’architettura palladiana, con una <strong>documentazione ampia e strutturata</strong> a disposizione dell’utente. Il catalogo raccoglie un vasto patrimonio di materiali, con <strong>collezioni di:</strong></p>
+					<ul>
+ 						<li><strong>Libri antichi e rari:</strong> 12 </li>
+						<li><strong>Raccolte di disegni</strong> </li>
+						<li><strong>Raccolte di rilievi:</strong> 47 </li>
+						<li><strong>Materiali iconografici:</strong> 12.963 </li>
+						<li><strong>Modelli fisici</strong> </li>
+						<li><strong>Modelli digitali 3D:</strong> 51 </li>
+					</ul>
+					<p>Il catalogo ricopre un ruolo di <strong>riferimento</strong>fondamentale <strong>per la descrizione delle opere</strong>, offrendo <strong>metadati</strong> ricchi e accurati. Tuttavia, il sito presenta un’<strong>interfaccia</strong> piuttosto <strong>datata</strong>, con una <strong>navigazione</strong> concepita secondo una logica di <strong>consultazione</strong> prevalentemente <strong>archivistica, più che esplorativa</strong>; infatti, l’utente può <strong>ricercare</strong> le opere <strong>attraverso campi descrittivi e filtri catalografici.</strong> </p>
+					<p>La Mediateca mette inoltre a disposizione una <strong>localizzazione cartografica delle opere</strong>, ma questa funzione ha un ruolo secondario rispetto alla consultazione catalografica e <strong>non è pensata come strumento di esplorazione narrativa del territorio, limitandosi a localizzare gli edifici</strong>, non a costruire un'esperienza di esplorazione del territorio. </p>
+					<p>La navigazione cartografica, inoltre, non è integrata con sistemi di percorso guidato e non sono presenti strumenti di navigazione con una timeline interattiva o per “hotspot” tematici. Inoltre, <strong>non</strong> è <strong>integrata con sistemi di percorso guidato</strong> e <strong>non</strong> sono <strong>presenti strumenti di navigazione con una timeline interattiva o per “hotspot” tematici.</strong> </p>
+					<p>Se da un lato il catalogo del Palladium museum nell’interfaccia include anche una <strong>sezione newsletter</strong> (implementabile in futuro anche in questo progetto), dall’altro presenta un ulteriore <strong>limite</strong>: l’<strong>assenza di una struttura orientata all’utente</strong>. Infatti, il sito <strong>non</strong> sembra mettere a disposizione <strong>funzionalità di personalizzazione</strong> come: </p>
+					 <ul>
+					 	<li>il <strong>salvataggio</strong> delle opere</li>
+					 	<li>la <strong>creazione </strong> di percorsi personali</li>
+					 	<li>la <strong>partecipazione attiva</strong> alla valorizzazione del catalogo</li>
+					 	<li>la <strong>ricezione</strong> lato utente di <strong>suggerimenti personalizzati.</strong></li>
+					 </ul>
+					<p>Infine, il progetto adotta la struttura dei metadati del catalogo CISA e la integra con informazioni ricavate dalle schede descrittive delle singole opere.</p>
+
+					<h3 class="link"><a href="https://www.vicenzavillepalladio.it/sito-patrimonio-unesco/andrea-palladio/" title="Vai al sito UNESCO" target="_blank">La città di Vicenza e le ville del Palladio nel Veneto</a></h3>
+					<p>Un <strong>secondo sito</strong> ricco di risorse è il portale realizzato con i <strong>fondi della Legge 20 febbraio 2006, n. 77</strong> (<em>“Misure speciali di tutela e fruizione dei siti e degli elementi italiani di interesse culturale, paesaggistico e ambientale, inseriti nella “lista del patrimonio mondiale”, posti sotto la tutela dell’UNESCO”</em>).</p>
+					<p>Rispetto al catalogo del Palladio Museum, questo portale presenta un’<strong>interfaccia più pulita e moderna</strong>, orientata alla <strong>divulgazione turistica.</strong></p>
+					<p>Difatti, offre una <strong>navigazione</strong> delle opere architettoniche palladiane <strong>sia libera sia basata su itinerari UNESCO prestabili</strong></p>
+					<p>Tuttavia, il sito risulta parziale, in quanto <strong>descrive solamente 25 componenti del Sito Patrimonio Mondiale UNESCO</strong>, la Città di Vicenza e le Ville del Palladio nel Veneto, limitando, così, il catalogo alle <strong>opere comprese nel sito patrimonio mondiale UNESCO.</strong></p>
+					<p>Inoltre, la <strong>navigazione su cartina è suddivisa</strong> fra “Città di Vicenza” e “Le Ville”, <strong>senza</strong> una vera <strong>integrazione unitaria</strong> del sistema territoriale.</p>
+					<p><strong>Manca</strong> poi una <strong>navigazione</strong> mirata <strong>per timeline o criteri interattivi</strong> come <strong>“Le mete più visitate”</strong>. Un elemento <strong>interessante</strong> è, invece, la <strong>sezione dedicata a news ed eventi</strong>, la quale introduce una dimensione più aggiornata e divulgativa.</p>
+					<h3>Sintesi comparativa</h3>
+					<p>In sintesi, il sito del <strong>catalogo del Palladio Museum</strong> costituisce un ottimo modello di <strong>catalogo archivistico</strong>, con dei <strong>metadati completi</strong>, ma limitata esperienza di esplorazione visiva, mentre il <strong>progetto qui presentato:</strong></p>
+						<ul>
+							<li>usa gli <strong>stessi metadati</strong></li> 
+							<li><strong>riorganizza</strong> attraverso <strong>timeline</strong> e <strong>mappe interattive</strong>, <strong>percorsi tematici</strong> e un sistema di <strong>gallerie di immagini</strong></li> 
+							<li>propone una <strong>navigazione semplice</strong> e orientata all’<strong>esplorazione.</strong></li>	
+						</ul>
+					
+					<p>Il <strong>sito UNESCO</strong>, invece, è particolarmente <strong>efficace in ambito turistico</strong>, grazie agli <strong>itinerari</strong> già <strong>strutturati</strong>. Rispetto a questo, <strong>il progetto proposto</strong>si propone di:</p>
+						<ul>
+							<li><strong>mantenere</strong> l’organizzazione per  <strong>itinerari</strong></li>
+							<li><strong>ampliare</strong> il numero delle <strong>opere incluse</strong></li>
+							<li><strong>introdurre </strong>una <strong>timeline interattiva</strong></li>
+							<li>integrare un <strong>catalogo unico con più modalità di navigazione</strong>.</li>
+						</ul>
+					
+					<h3>Esperienza utente e personalizzazione</h3>
+					<p>In entrambi i siti sembrerebbe mancare una <strong>struttura di accesso utente</strong> che offra un’<strong>esperienza di browsing personalizzata</strong> o la possibilità di <strong>salvare</strong> opere di interesse per l’utente <strong>in raccolte dedicate.</strong></p>
+					<p>Questi <strong>due siti</strong> rappresentano dei punti di <strong>riferimento per lo studio e la valorizzazione dell'architettura palladiana, ma</strong> rispondono a <strong>esigenze differenti:</strong> </p>
+						<ul>
+							<li>il primo privilegia la <strong>consultazione archivistica</strong></li>
+							<li>il secondo la <strong>promozione del patrimonio UNESCO.</strong></li>
+						</ul>
+					<p>Il <strong>progetto</strong> presentato nasce con l'<strong>obiettivo</strong> di <strong>integrare</strong> i punti di forza di entrambe <strong>le risorse in un'unica piattaforma</strong>, combinando l'<strong>accuratezza dei metadati con modalità di navigazione più intuitive e orientate all'esplorazione</strong>, come mappe, timeline e percorsi tematici.</p>
+					<p>In una prospettiva di ulteriore implementazione, il progetto prevederebbe un <strong>portale di accesso per l’utente</strong>, tramite il quale offrire un’<strong>esperienza di browsing mirata</strong>, con, per esempio, la possibilità di: </p>
+						<ul>
+							<li><strong>salvare</strong> opere di interesse per il lettore <strong>in raccolte personali</strong></li> 
+							<li><strong>partecipare alla valorizzazione dei contenuti</strong></li>
+							<li>
+								<strong>interagire con la struttura del catalogo </strong>(si veda la sezione <strong>“Le mete più visitate”</strong> pensata per essere costruita sulla base dei <strong>suggerimenti degli iscritti alla newsletter/ utenti registrati</strong>).
+							</li>
+						</ul>
+					<h3 class="link"><a href="https://www.europeana.eu/it" title="Vai al sito Europeana" target="_blank">Europeana</a></h3>
+					<p>Europeana è una piattaforma digitale che <em>“fornisce ad appassionati di patrimonio culturale, professionisti, insegnanti e ricercatori un accesso digitale a materiale relativo al patrimonio culturale europeo”.</em></p>
+
+					<p>Pur <strong>non</strong> essendo un <strong>sito web tematicamente dedicato all’architettura palladiana</strong>, risulta essere un significativo punto di <strong>riferimento per la progettazione delle modalità di interazione e accesso ai contenuti</strong>. La piattaforma, infatti, <strong>integra funzionalità avanzate di esplorazione</strong>, come collezioni tematiche, contenuti in evidenza, storie editoriali e contenuti popolari.</p>
+
+					<p>Rilevante è la presenza di un <strong>sistema di account utente che consente di salvare contenuti, creare raccolte personalizzate, condividere elementi e interagire attivamente con il patrimonio digitale.</strong></p>
+
+					<p>Per questi motivi, in una prospettiva di implementazione futura, <strong>si potrebbe integrare una sezione di accesso/iscrizione utente</strong>, in modo analogo a Europeana, permettendo funzioni come:</p>
+						<ul>
+							<li><strong>salvataggio in gallerie personali</strong> (“Aggiungi questo oggetto a una galleria.”)</li>
+							<li><strong>aggiunta ai preferiti</strong> (“Salva questo oggetto nei tuoi mi piace”)</li>
+							<li><strong>condivisione dei contenuti </strong>(“Condividi”)</li>
+						</ul> 
+						<p><strong>aumentando la diffusione e la valorizzazione dei contenuti.</strong></p>
+
+					<p>Sarebbe interessante anche integrare <strong>all’interno di ogni singolo itinerario e item il numero di visualizzazioni</strong>, come anche la possibilità da parte dell’<strong>utente di lasciare una valutazione a fine visita o una recensione.</strong></p>
+
+					<p>Questo progetto integra quindi: </p>
+						<ul>
+							<li><strong>i dati archivistici forniti dal catalogo CISA Palladio</strong></li>
+							<li><strong>la struttura di navigazione per mappe e itinerari del sito UNESCO</strong></li> 
+							<li><strong>nuove modalità di esplorazione come timeline e “mete più visitate”.</strong></li>
+						</ul>
+						<p>Il tutto si ispira inoltre ai <strong>modelli di interfaccia della homepage, architettura dell’informazione e accesso utente</strong> forniti da <strong>Europeana.</strong></p>
+					<p>Pertanto, il progetto unisce la componente di contenuto archivistico del Palladium museum all’organizzazione turistica e per itinerari del sito UNESCO, aggiungendo, allo stesso tempo, altre modalità di esplorazione del catalogo, come ad esempio per linea del tempo interattiva. Ne risulta una piattaforma ibrida, la quale, a partire dalla consultazione più specialistica del primo sito e divulgativa del secondo, è pensata <strong>per offrire una consultazione aperta sia a utenti esperti sia a un pubblico non specializzato.</strong></p>
+
+
+
+				<h2 id="struttura" class="struttura"><i class="fa fa-arrow-right" aria-hidden="true"></i> STRUTTURA </h2>
+				<h3>Mappa concettuale</h3>
+				<div class="mappa">
+					<img src="img/mappa-concettuale.jpg" alt="Mappa concettuale" title="Immagine mappa concettuale">
+				</div>
+				<h3>Schema delle dipendenze</h3>
+				<div class="mappa">
+					<img src="img/schema-dipendenze.jpg" alt="Schema delle dipendenze" title="Immagine schema delle dipendenze">
+				</div>
+				<br>
+				<div class="link">Per la realizzazione delle mappa si veda <strong><a href="https://www.canva.com/" target="_blank" title="Vai a Canva">Canva.</a></strong></div>
+				<h3>Le categorie</h3>
+				<p>Le <strong>categorie descrittive</strong> degli item sono state prese sia <strong>dal catalogo del CISA</strong> che seguendo il sistema <strong>Dublin Core.</strong> In particolare:</p>
+					<ul>
+						<li><strong>Titolo:</strong> Il nome con cui sono riconosciute le diverse opere architettoniche in esame</li>
+						<li><strong>Progetto:</strong> La datazione riguardante la realizzazione progettuale della risorsa</li>
+						<li><strong>Costruzione:</strong> Il periodo di edificazione dell’opera</li>
+						<li><strong>Stato di realizzazione:</strong> Indica le condizioni in cui versa l’opera; può variare da <strong>“esistente”</strong> a <strong>“incompiuto”</strong> e <strong>“trasformato”</strong></li>
+						<li><strong>Luogo: </strong>L’ubicazione dei diversi item, indicata con via, numero civico, paese e provincia</li>
+						<li><strong>Artisti:</strong> i differenti Autori che hanno lavorato alla realizzazione dell’opera</li>
+						<li><strong>Committenti:</strong> Entità responsabile della commissione del contenuto della risorsa</li>
+						<li><strong>Tipologia:</strong> Natura o genere del contenuto della risorsa</li>
+						<li><strong>Ordini architettonici:</strong> I diversi ordini che presentano le strutture prese in analisi</li>
+						<li><strong>Parti del complesso:</strong>le parti architettoniche che costituiscono l'opera analizzata</li>
+						<li><strong>Soggetto:</strong>  Argomento principale della risorsa,  espresso da parole o frasi chiave, o da codici diclassificazione che descrivono l'argomento della risorsa</li>
+						<li><strong>Immagine:</strong> forma grafica dell'item</li>
+						<li><strong>Indirizzo</strong></li>							
+					</ul>
+
+				<h2 id="layout" class="layout"> <i class="fa fa-arrow-right" aria-hidden="true"></i>LAYOUT </h2>
+				<h3>Architettura logica</h3>
+				<p>L’<strong>architettura logica d’interfaccia</strong> prevede: </p>
+					<ul>
+						<li>un’<strong>intestazione uguale in tutto il sito</strong>, a cui è associata </li>
+						<li>un’<strong>immagine/ logo intuitivo</strong> che evoca l’argomento del sito, Andrea Palladio.</li>
+					</ul>
+					Per una navigazione ordinata, sono presenti 
+					<ul>
+						<li>una <strong>barra di navigazione primaria,</strong></li>
+						<li><strong>secondaria</strong> (quest’ultima sul lato sinistro della pagina)</li> 
+						<li><strong>contestuale</strong></li> 
+						<li><strong>briciole di pane navigabili</strong> che indichino all’utente in quale punto della struttura si trova </li> 
+						<li>la <strong>metanavigazione</strong> a piede di pagina. </li>
+					</ul>
+
+				<p>Nel sito e pertanto presente un <strong>footer</strong>, diviso in <strong>credits</strong> (contenenti il <strong>rinvio a Web project plan e i contatti</strong>) e in <strong>copyright</strong> (paternità e data).</p>
+				
+				<p>La <strong>Homepage</strong>, oltre a presentare (uguale in tutte le pagine) una <strong>topnav</strong> di rimando alle altre pagine del sito: </p>
+					<ul>
+						<li><strong>Progetto </strong></li>
+						<li><strong>Catalogo</strong></li>
+						<li><strong>Dati</strong></li>
+						<li><strong>Esplora</strong> (dropdown al cui interno sono contenute <strong>“Eventi”</strong>, <strong>“Newsletter”</strong> e <strong>“L’Esperto consiglia”</strong>), </li>
+					</ul>
+						<p>possiede una <strong>hero-image</strong> e un <strong>hero-text</strong> di introduzione all’argomento del sito.</p>
+					<p>Il <strong>corpo</strong> della pagina presenta un <strong>testo coerente e funzionale</strong> a una lettura facilitata.
+					In particolare, il <strong>layout</strong> rimane <strong>costante</strong> nel passare da una pagina a un’altra, con una <strong>scelta cromatica e di font</strong> che viene <strong>rispettata nel complesso </strong>dell’intero sito web. </p>
+					<p>Le possibili variazioni rispetto allo schema generale rispondono alla necessità di adattarsi al contenuto specifico presente nelle diverse pagine. </p>
+					<p>La <strong>pagina catalogo è divisa in tre tabs</strong> per far visualizzare all’utente le <strong>diverse possibilità di esplorazione della raccolta</strong>, dalla navigazione per <strong>itinerari</strong> o per <strong>timeline</strong> a quella per <strong>mete più visitate.</strong></p>
+					<p>L’<strong>esplorazione per itinerari</strong> presenta un’<strong>organizzazione a cards ordinate</strong> per permettere all’utente di visualizzare i possibili itinerari offerti (pagine a cui il catalogo rinvia tramite l’<strong>uso di buttons</strong>). </p>
+					<p>La <strong>seconda tab</strong> mostra gli items ordinati in una <strong>timeline</strong> , mentre nella <strong>terza tab</strong>, <strong>“Le mete più visitate”</strong> le opere sono visualizzate dall’utente grazie a una <strong>responsive gallery.</strong> </p>
+					<p>Tutti e <strong>tre i canali di esplorazione del catalogo</strong> presentano una <strong>pagination</strong>, nell’eventualità di aggiungere più elementi alla raccolta. In prospettiva di una <strong>futura implementazione</strong>, all’interno della left column del catalogo è stata pensata una <strong>navigazione aggiuntiva</strong>, che risponderebbe a un’<strong>interrogazione per Provincia, Comune, Ordine alfabetico e Ricerca per parole chiave.</strong> </p>
+					<p>Le <strong>pagine itinerari e item</strong> presentano nella barra laterale una navigazione per <strong>breadcrumbs</strong>, una <strong>navigazione contestuale</strong> (che rinvii a siti web differenti dal progetto per dare maggiori informazioni all’utente) e, nel caso della <strong>pagina item</strong>, i <strong>metadati descrittivi dell’opera</strong></p>
+					<p>La <strong>pagina dati</strong> possiede una <strong>tabella con scroll orizzontale</strong> per la raccolta delle risorse e le loro descrizioni </p>
+					<p>Nella <strong>pagina del Progetto</strong>, la barra laterale presenta un <strong>vertical- menu</strong>, in modo da poter raggiungere più facilmente la sezione del Web Project Plan desiderata.</p>
+
+					<h3>Strumenti di navigazione</h3>
+					<p>In generale, le diverse barre di navigazione si basano sui concetti di:</p>
+						<ul>
+							<li><strong>memorizzabilità</strong></li> 
+							<li><strong>learnability</strong></li> 
+							<li><strong>orientamento</strong> (gli strumenti di navigazione non cambiano mai di posizione all’interno delle pagine)</li>
+							<li><strong>convenzioni.</strong></li>
+						</ul>
+					<p><strong>-	Navigazione principale</strong></p>
+					<p>La <strong>barra di navigazione principale</strong> è stata posta nella <strong>zona di testata</strong> per consentire all’utente una navigazione della struttura semplice e chiara, con la possibilità di <strong>visitare le cinque pagine principali del sito web</strong>  (principio di <strong>memorizzabilità e learnability</strong> ). </p>
+					<p>Sono state sfruttate delle <strong>icone</strong> ad hoc per rinviare i concetti esplicitati all’interno dei collegamenti.</p>
+					<p>È inoltre prevista sempre dentro la barra di navigazione principale un’<strong>area d’accesso o iscrizione</strong>  volta a <strong>personalizzare l’esperienza dell’utente</strong> (vd metanavigazione).
+					L’<strong>area di accesso</strong> nella topnav è stata resa con un <strong>topnav split.</strong> </p>
+					<p><strong>-	Navigazione secondaria e contestuale</strong></p>
+					<p>E’ presente, all’interno di diverse pagine del sito, anche una <strong>barra di navigazione laterale</strong> che assolve a varie <strong>funzioni:</strong></p>
+						<ul>
+							<li>Nella pagina del Progetto rinvia alle <strong>sezioni</strong> in cui è suddiviso il <strong>Web Project Plan</strong> tramite un <strong>vertical menu;</strong></li>
+							<li>Nella <strong>pagina catalogo</strong> è presente una navigazione laterale <strong>per riordinare la lista in base a provincia, comune, Ordine alfabetico e Parole chiave</strong> per i vari oggetti culturali, mentre nella <strong>pagina item</strong> la barra laterale raccoglie i <strong>dati</strong> relativi all’opera architettonica.</li>
+						</ul>
+					
+					<p>All’interno delle pagine dedicate agli itinerari è stata inserita una <strong>navigazione contestuale</strong>, box di approfondimento laterale dove vengono citati e riconosciuti i <strong>link di provenienza degli itinerari</strong> stessi, sia per accreditare correttamente il sito produttore dei percorsi che permettere all’utente di consultare la fonte originaria. Tali box si chiamano contestuali perché sono specifici per la pagina corrente, cambiano al cambiare della pagina.</p>
+					<p>La stessa cosa è stata fatta per le <strong>pagine item</strong>, le quali riportano nella navigazione contestuale un <strong>rinvio</strong> alla pagina a loro dedicata all’interno del <strong>catalogo del Palladio Museum.</strong></p>
+					<p><strong>-	Briciole di pane</strong></p>
+					<p>Ogni pagina è fornita di breadcrumbs all’interno della <strong>barra di navigazione laterale</strong>, in modo tale  da segnalare all’utente in quale punto della struttura si trovi, <strong>ricostruendo i livelli gerarchici che ha consultato</strong> prima di arrivare alla suddetta pagina. Attraverso questo sistema di navigazione l’utente può ripercorrere le pagine precedenti a quella corrente, <strong>fino a tornare alla Home (La stessa immagine di testata, una volta cliccata, permette il rinvio alla homepage).</strong> </p>
+					<p><strong>-	Metanavigazione </strong></p>
+					<p>La metanavigazione implementata è attualmente rivolta al <strong>piede di pagina</strong>, dove sono contenute le informazioni su <strong>copyright, credits, licenze e rinvio al Web Project Plan.</strong> </p>
+					<p>Sarebbe <strong>interessante sviluppare altri strumenti di aiuto e funzionalità generali</strong>, come:</p>
+					 <ul>
+					 	<li>l’opzione di <strong>multilinguismo</strong> (almeno italiano, inglese)</li> 
+					 	<li>una sezione di <strong>login utente</strong></li> 
+					 	<li>iscrizione a una <strong>newsletter.</strong></li> 
+					 </ul>
+					 <p>Questo renderebbe <strong>più fruibile il sito web</strong>, permettendo all’account loggato di salvare opere culturali, misurarle con un ranking, scrivere recensioni e rimanere aggiornato su eventi e novità riguardante l’ambito preso in esame dal progetto. </p>
+					<p>All’interno del <strong>catalogo</strong>, il sito integra una <strong>navigazione delle opere per linea del tempo e mappa dei luoghi interattive.</strong> Per quanto riguarda la <strong>homepage</strong>, invece, sono presenti delle <strong>proposte di navigazione alternativa, per:</strong></p>
+					 <ul>
+					 	<li><strong>Image Gallery With Horizontal Scroll</strong>, con un button di reindirizzamento al catalogo </li>
+					 	<li><strong>Image Grid</strong>, la quale mostra gli item più visualizzati della giornata a cui rinvia tramite l’effetto di <strong>Overlay.</strong></li>
+					 </ul>
+
+				<h3 class="link"><a href="https://wireframe.cc/" title="Vai a Wireframe.cc" target="_blank">Wireframe</a></h3>
+				<p>Il design dei vari wireframes, ovvero il disegno delle componenti logiche della navigazione e dell’interfaccia, è stato progettato tramite il programma <strong>Wireframe.cc.</strong></p>
+				<ul>
+					<li><a href="https://wireframe.cc/o9tHom" class="link" target="_blank" title="Vai al wireframe della homepage">Home</a></li>
+					<li><a href="https://wireframe.cc/kmiA5d" class="link" target="_blank" title="Vai al wireframe del Progetto">Progetto</a></li>
+					<li><a href="https://wireframe.cc/SFSppO" class="link" target="_blank" title="Vai al wireframe del Catalogo">Catalogo</a></li>
+					<li><a href="https://wireframe.cc/QeofgR" class="link" target="_blank" title="Vai al wireframe del Primo Itinerario">Primo Itinerario</a></li>
+					<li><a href="https://wireframe.cc/OUTWxf " class="link" target="_blank" title="Vai al wireframe della Timeline">Timeline</a></li><li><a href="https://wireframe.cc/pFBF24" class="link" target="_blank" title="Vai al wireframe delle Mete più visitate">Le mete più visitate</a></li>			
+					<li><a href="https://wireframe.cc/pnhzn1" class="link" target="_blank" title="Vai al wireframe dell'Item 1">Item</a></li>
+					<li><a href="https://wireframe.cc/PWb4yw" class="link" target="_blank" title="Vai al wireframe dei Dati">Dati</a></li>
+				</ul>
+
+				
+				<h2 id="usabilita" class="usabilita"><i class="fa fa-arrow-right" aria-hidden="true"></i> USABILITA' </h2>
+				<h3>Architettura</h3>
+				<p>Si è pensato a mantenere una <strong>struttura di base coerente</strong>, dove il <strong>posizionamento dell’intestazione, immagine/ logo, barre di navigazione primaria, secondaria e contestuale, briciole di pane e metanavigazione, con il footer, rimane costante a tutte le pagine</strong> (le eventuali variazioni sono da imputarsi a una maggior leggibilità della pagina specifica).</p>
+				<p>I <strong>box</strong> ideati nella risorsa possono essere <strong>di approfondimento</strong> (navigazione contestuale) o, ancora, <strong>box di contenuto</strong>, in modo da strutturare il più possibile i contenuti su isole tematiche o fasce di contenuto. </p>
+				<p>Nell’implementazione dei vari canali di navigazione, vi è <strong>il tentativo di non costringere mai l’utente finale ad usare il pulsante indietro del browser</strong> (si vedano le <strong>briciole di pane</strong>, il <strong>logo della testata</strong> che rinvia alla home).</p>
+				<p> Anche le <strong>diverse possibilità di browsing</strong> sono pensate per facilitare la navigazione e renderla il più piacevole possibile all’occhio dell’utente, incentivando così la consultazione del sito web. </p>
+
+				<h3>Aspetto e tipografia </h3>
+				<p>All'interno del sito viene utilizzato lo <strong>stesso stile per colori, font, dimensioni, posizionamenti, etc.</strong>, con al massimo qualche variazione sempre per rendere maggiormente leggibile la sezione di interesse </p>
+				<p>Per le <strong>parti testuali</strong>, si è pensato di <strong>aumentare l'interlinea</strong> e di <strong>non giustificare il testo</strong>, seguendo un modello Wiki Like. Per le porzioni di testo importanti, viene utilizzato il tag <strong>strong (grassetto)</strong>, mentre per le citazioni o titoli di libri il tag <em> em (corsivo)</em>. </p>
+				<p>L'uso di: </p>
+					<ul>
+						<li><strong>paragrafi</strong></li>
+						 <li><strong>liste</strong></li>
+						 <li><strong>titoli </strong>( in livello gerarchico)</li> 
+					</ul>
+					<p>E l'aggiunta di:</p>
+					<ul>
+ 						<li><strong>link</strong> (con target="_blank")</li>
+ 						<li><strong>immagini e elementi che spezzino la scrittura lineare</strong></li>
+ 					</ul>
+ 					<p>Sono stati previsti <strong>per link e immagini</strong> gli attributi <strong>@title</strong> e <strong>@alt</strong> per seguire la <strong>norma di accessibilità.</strong></p>
+ 				<h3 class="link">Colori: <a href="https://color.adobe.com/it/create/color-wheel?color-palette=F2D091%2CFF9700%2CF27405%2CAE4932%2C592B02&color-palette-name=Il+mio+Tema+colore&tab=primary-color" title="Vai alla palette colori Adobe" target="_blank">Adobe Express </a></h3>
+ 				<p>Per la <strong>scelta dei colori</strong> si è fatto riferimento al <strong>Generatore di palette e ruota colori di Adobe Express.</strong> Ci si è basati sui principi della teoria del colore nel web di:</p>
+ 					<ul>
+ 						<li><strong>Complementazione:</strong> l’utilizzo di colori complementari per valorizzarli e creare una combinazione efficace</li>
+ 						<li><strong>Vibrazione dei colori:</strong> la variazione tra colori caldi. </li>
+ 					</ul>
+ 				<p>Nell'ottica di un <strong>uso sapiente, tecnicamente sostenibile e adeguato,</strong> i <strong>colori di tonalità più forte e  scura</strong> sono stati adoperati <strong>per la barra di navigazione primaria, button, etc,</strong> mentre i <strong>colori di tonalità più chiara</strong> per la parte contenente <strong>testi e immagini.</strong></p>
+
+ 				<h3 class="link">Font e <a href="https://fontawesome.com/v4/icons/" title="Vai alla libreria di icone di Font Awesome, 4.7" target="_blank">icone</a></h3>
+ 				<p>Il <strong>font Tahoma</strong> è stato scelto tra i <strong>font di sistema creati da Microsoft</strong> perché risulti safe per il web; nel caso in cui il browser non riuscisse a leggerlo, vengono adoperati <strong>due fallback: Verdana e sans-serif.</strong></p>
+ 				<p>Infine, le <strong>icone</strong> sono state selezionate dalla <strong>libreria di Font Awesome (4.7)</strong> e adoperate <strong>per evocare concetti e non appesantire la leggibilità del sito.</strong> </p>
+
+
+
+				<h2 id="servizi" class="servizi"> <i class="fa fa-arrow-right" aria-hidden="true"></i>SERVIZI </h2>
+				<p>Per quanto riguarda la categoria dei servizi, sono messi a disposizione dell’utente <strong>percorsi alternativi ai</strong> soli <strong>canali di navigazione primaria, secondaria e contestuale</strong>. I <strong>diversi strumenti di browsing</strong> utilizzati sono:</p>
+					<ul>
+						<li><strong>Mappe</strong></li>
+						<li><strong>Linea del tempo</strong></li>
+						<li><strong>Navigazione per Provincia, Comune, Ordine alfabetico, Parole chiave (implementabile in futuro)</strong></li>
+						<li><strong>Pagination</strong></li>
+					</ul>
+				<p><strong>Altri strumenti di interazione </strong> utili alla navigazione del sito sono:</p>
+					<ul>
+						<li><strong>Dropdowns:</strong> menù a discesa</li>
+						<li><strong>Image Gallery With Horizontal Scroll</strong></li>
+						<li><strong>Image Grid con Overlay</strong></li>
+						<li><strong>Vertical Menu</strong></li>
+						<li><strong>Responsive Gallery</strong></li>
+						<li><strong>Card:</strong> blocchi di contenuto interattivi al passaggio del mouse.</li>
+						<li><strong>Tooltips:</strong> Effetti sui link al passaggio del mouse</li>
+						<li><strong>Details and summary tags:</strong> per la creazione di un widget interattivo che l'user può aprire e chiudere, espandendo o restringendo il contenuto ad essi sottostante</li>
+						<li><strong>Button</strong></li>
+						<li><strong>Tabs:</strong> pannelli affiancati di contenuto</li>
+						<li><strong>Accordion:</strong> sezioni collassabili di testo, apribili solo dietro richiesta dell'utente.</li>
+					</ul>
+				
+				<p>Nel progetto sarebbero <strong>previste, ma non ancora implementate</strong>, delle sezioni di: </p>
+					<ul>
+						<li><strong>Accedi:</strong> registrazione utente</li>
+						<li><strong>Eventi:</strong> per invogliare l'utente a visitare in loco le opere</li>
+						<li><strong>Newsletter:</strong> creare una community che interagisca con la struttura del sito e gli item</li>
+						<li><strong>L'Esperto consiglia:</strong> pagina in cui viene scelto un iscritto che scriva un articolo con un consiglio di visita.</li>
+					</ul>
+
+
+				<h2 id="bibliografia" class="bibliografia"><i class="fa fa-arrow-right" aria-hidden="true"></i> BIBLIOGRAFIA E SITOGRAFIA </h2>
+				<p><strong>CITAZIONI HOMEPAGE:</strong></p>
+				<ul class="link">
+					<li class="link">Citazione Barbaro: Daniele Barbaro, I dieci libri dell'architettura di M. Vitruvio (Venezia: Francesco Marcolini, 1556), c. 40r. - Barbaro, Daniele. I dieci libri dell'architettura di M. Vitruvio. Venezia: Francesco Marcolini, 1556. Edizione digitalizzata consultabile presso la Biblioteca Digitale dell'Università di Utrecht (link: <strong><a href="https://dbc.library.uu.nl/handle/20.500.14918/44576?utm" title="Vai alla fonte" target="_blank"> https://dbc.library.uu.nl/handle/20.500.14918/44576?utm</a></strong>)</li>
+					<li class="link">Citazione Goethe: Johann Wolfgang von Goethe, Viaggio in Italia, 19 settembre 1786 (Vicenza), pagina 113- <strong><a href="https://www.liceopigafetta.edu.it/wp-content/uploads/2025/02/LA-NAVICELLA-DELLINGEGNO.pdf?utm" title="Vai alla fonte" target="_blank">www.liceopigafetta.edu.it/wp-content/uploads/2025/02/LA-NAVICELLA-DELLINGEGNO.pdf?utm</a></strong></li>
+					<li class="link">Hugo von Hofmannsthal, via <strong><a href="https://it.wikiquote.org/wiki/Andrea_Palladio" title="Vai alla fonte" target="_blank">https://it.wikiquote.org/wiki/Andrea_Palladio</a></strong></li>
+				</ul>
+				<p><strong>Citazione STRUMENTI PER LA CREAZIONE DEL SITO</strong></p>
+					<ul>
+						<li class="link"><strong><a href="https://www.w3schools.com/" title="Vai al sito w3schools" target="_blank">https://www.w3schools.com/</a></strong>, in particolare le sezioni dedicate ad html, css, javascript e how to</li>
+						<li class="link"><strong><a href="https://www.canva.com/it_it/diagramma/mappe-mentali/" title="Vai a canva" target="_blank">https://www.canva.com/it_it/diagramma/mappe-mentali/</a></strong> per la mappa concettuala e lo schema delle dipendenze</li>
+						<li class="link"><strong><a href="https://wireframe.cc/" title="Vai a Wireframe.cc" target="_blank">https://wireframe.cc/</a></strong> Per il disegnare wireframes</li>
+						<li class="link"><strong><a href="https://fontawesome.com/v4/icons/" title="Vai alla libreria di icone di Font Awesome, 4.7" target="_blank">https://fontawesome.com/v4/icons/</a></strong> Per le icone</li>
+						<li class="link"><strong><a href="https://color.adobe.com/it/create/color-wheel?color-palette=F2D091%2CFF9700%2CF27405%2CAE4932%2C592B02&color-palette-name=Il+mio+Tema+colore&tab=primary-color" title="Vai alla palette colori Adobe" target="_blank">https://color.adobe.com/it/create/color-wheel?color-palette=F2D091%2CFF9700%2CF27405%2CAE4932%2C592B02&color-palette-name=Il+mio+Tema+colore&tab=primary-color</a></strong> per generale la palette di colori del sito</li>
+						<li class="link"><strong><a href="https://leafletjs.com/" title="Vai al sito Leaflet" target="_blank">https://leafletjs.com/</a></strong> per costruire le mappe geografiche di itinerari</li>
+						<li class="link"><strong><a href="https://github.com/" title="Vai al sito github">https://github.com/</a></strong> Per ospitare il sito.</li>
+					</ul>
+
+						<p><strong>SITOGRAFIA</strong></p>
+						<ul>
+						<li class="link">L’utilizzo di dati descrittivi provenienti dalla Mediateca del CISA Palladio in forma di dataset strutturato. Fonte dati: Mediateca del CISA Andrea Palladio <strong> <a href="https://mediateca.palladiomuseum.org/palladio/opere.php" title="Vai al catalogo CISA" target="_blank">https://mediateca.palladiomuseum.org/palladio/opere.php.</a></strong></li>
+						
+						<li class="link">Per gli itinerari: Credits (obliged to state): sito ufficiale del patrimonio “Ville Palladiane”, nel rispetto delle relative note legali e condizioni di utilizzo ( <strong><a href=" https://www.vicenzavillepalladio.it/" title="Vai al sito UNESCO" target="_blank">https://www.vicenzavillepalladio.it/</a></strong>)</li>
+					</ul>
+					<p><strong>COPYRIGHT PHOTOS</strong></p>
+					<p>Le immagini sono state reperite tramite Wikimedia Commons, che rende disponibili file con licenze indicate per ciascuna risorsa. Ogni immagine è stata utilizzata nel rispetto della specifica licenza riportata nella relativa pagina.</p>
+					<ul>
+						<li class="link">Rotonda: Immagine: Marco Bagarella, “Opera propria”, CC BY-SA 3.0, via Wikimedia Commons <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/ " target="_blank"> https://creativecommons.org/licenses/by-sa/3.0/ </a></strong>
+						Di <a href="https://commons.wikimedia.org/w/index.php?title=Marco_Bagarella&amp;action=edit&amp;redlink=1" class="new" title="Marco Bagarella (page does not exist)">Marco Bagarella</a> - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=10350077">Collegamento</a></strong></li>
+
+						<li class="link">Basilica Palladiana: Immagine: Didier Descouens, “Opera propria”, CC BY-SA 4.0,via Wikimedia Commons <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">https://creativecommons.org/licenses/by-sa/4.0/</a></strong> Di <a href="https://commons.wikimedia.org/wiki/User:Archaeodontosaurus" title="User:Archaeodontosaurus">Didier Descouens</a> - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=61649890">Collegamento</a></strong></li>
+
+						<li class="link">Chiesa del monastero San Giorgio Maggiore: Immagine: Didier Descouens (Archaeodontosaurus), “Opera propria”, CC BY-SA 4.0, via Wikimedia Commons <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">https://creativecommons.org/licenses/by-sa/4.0/ </a></strong> Di <a href="//https://commons.wikimedia.org/wiki/User:Archaeodontosaurus" title="User:Archaeodontosaurus">Didier Descouens</a> - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24921402">Collegamento</a></strong></li>
+
+						<li class="link">Villa Pisani, Lonigo: Immagine: Hans A. Rosbach, ritocco Marcok, CC BY-SA 3.0, via Wikimedia Commons <strong><a href="https://creativecommons.org/licenses/by-sa/3.0/ " target="_blank">https://creativecommons.org/licenses/by-sa/3.0/</a></strong> Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2411269">Collegamento</a></strong></li>
+
+						<li class="link">Villa Pisani, Montagnana: Immagine: A. Rosbach – Opera propria, CC BY 2.5, via Wikimedia Commons <strong><a href="https://creativecommons.org/licenses/by-sa/2.5/"> https://creativecommons.org/licenses/by-sa/2.5/ </a></strong> Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/2.5" title="Creative Commons Attribution-Share Alike 2.5">CC BY-SA 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2673330">Collegamento</a></strong></li>
+
+						<li class="link">Villa Pojana, Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by/2.5" title="Creative Commons Attribution 2.5">CC BY 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2406059">Collegamento</a></strong></li>
+						<li class="link">Chiesa del Redentore, Di <strong><a href="//commons.wikimedia.org/wiki/User:Luca_Aless" title="User:Luca Aless">Luca Aless</a></strong> - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=49781248">Collegamento</a></strong></li>
+						<li class="link">Teatro Olimpico, Di <strong><a href="https://commons.wikimedia.org/wiki/User:Archaeodontosaurus" title="User:Archaeodontosaurus">Didier Descouens</a></strong> - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=61890260">Collegamento</a></strong></li>
+						<li class="link">Villa Saraceno, Di Francesco Bandarin - Questo file è stato fornito dall' <strong><a href="https://it.wikipedia.org/wiki/Organizzazione_delle_Nazioni_Unite_per_l%27educazione,_la_scienza_e_la_cultura" class="extiw" title="it:Organizzazione delle Nazioni Unite per l'educazione, la scienza e la cultura">UNESCO</a></strong> (<strong><a rel="nofollow" class="external text" href="http://unesco.org/">unesco.org</a></strong>) come parte di una collaborazione GLAM-Wiki.È anche <strong><a rel="nofollow" class="external text" href="http://whc.unesco.org/en/documents/112674">disponibile sul sito internet dell'UNESCO</a>., <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en" title="Creative Commons Attribution-Share Alike 3.0 igo">CC BY-SA 3.0 igo</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=45802578">Collegamento</a></strong></li>
+						<li class="link">Barchesse di Villa Trissino, Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by/2.5" title="Creative Commons Attribution 2.5">CC BY 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2406049">Collegamento</a></strong></li>
+						<li class="link">Villa Godi, Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3124485">Collegamento</a></strong></li>
+						<li class="link">Villa Serego, Di Hans A. Rosbach - <span class="int-own-work" lang="it">Opera propria</span>, <strong><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24239397">Collegamento</a></strong></li>
+
+
+					</ul>
+
+
+
+
+
+
+				
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="credits">
+			<p><a href="progetto.html" title="Piano di progetto">Web Project Plan</a> | Contatti: giulia.guzzonato@studio.unibo.it </p>
+			<p><a href="#top">Torna su</a></p>
+		</div>
+
+		<div class="copyright">
+			<p> &copy; Copyright (c) 2026 by /Giulia Guzzonato.</p>
+			<p>Fonti: dataset opere CISA Andrea Palladio, OpenStreetMap, Leaflet, Font Awesome. Immagini: Wikimedia Commons (autori e licenze nel Web Project Plan).</p>
+		</div>
+	</footer>
+	<script src="js/script-tab.js"></script> 
+</body>
+
+</html>
