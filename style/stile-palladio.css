@@ -25,7 +25,7 @@ body {
 }
 
 /* a */
-	/* cambia colori dei link */
+/* cambia colori dei link */
 a {
   color: #DBD3CC;
   text-decoration: none;
@@ -42,7 +42,7 @@ a:hover {
   color: #4A1F16; 
 }
 
-/* LAYOUT: cambia colori obv */
+/* LAYOUT */
 /* header */
 .header {
   background-color: #AE4932;
@@ -111,7 +111,7 @@ a:hover {
   color: #311801;
   padding: 21px 23px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
@@ -207,7 +207,7 @@ div.vedi-anche {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-/* per centrare rispetto alla pagina */
+/* per giustificare rispetto alla pagina */
   justify-content: center;
 }
 
@@ -296,8 +296,6 @@ div.vedi-anche {
 
 
 /* se poi fai il row per div section  + columns */
-/* se poi fai il row per div section  + columns */
-/* row */
 /* row */
 .row:after {
   content: "";
@@ -305,7 +303,7 @@ div.vedi-anche {
   clear: both;
 }
 .row {
-  background-color: #C68070; /* <-- QUESTO */
+  background-color: #C68070; 
 
 }
 
@@ -501,19 +499,6 @@ td a.link:hover {
     color: #D95C00;
 }
 
-/* CONTROLLA SE E' GIUSTO, breadcrumb li a e :hover 
-Add a color to all links inside the list 
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
- Add a color on mouse-over
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-} */
-
 
 /* vertical menu */
 
@@ -533,12 +518,12 @@ ul.breadcrumb li a:hover {
 }
 
 .vertical-menu a:hover {
-  background-color: #DBD3CC; /* Dark grey background on mouse-over */
+  background-color: #DBD3CC; /* background on mouse-over */
   background-color: #DFB6AD;
 }
 
 .vertical-menu a.active {
-  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  background-color: #04AA6D; /* Add a color to the "active/current" link */
   color: white;
 }
 
@@ -618,7 +603,7 @@ text-align: center;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  background-color: #4A1F16
+  background-color: #4A1F16;
 }
 
 button {
@@ -773,7 +758,7 @@ form.example::after {
 
 /* img */
 
-/*tabella con bord*/
+
 /* Tabella dati con scroll orizzontale */
 .tab-dati {
   width: 100%;
