@@ -1,5 +1,2 @@
 # sito-web-palladio
-## Titolo 2
-### Titolo 3
-
-prova read.me
+## Progetto di sito web su Andrea Palladio, realizzato per il corso di Informatica Umanistica, a.a. 2025/2026
