@@ -493,6 +493,13 @@ li a.link:hover {
     color: #D95C00;
 }
 
+td a.link {
+    color: black;
+}
+td a.link:visited,
+td a.link:hover {
+    color: #D95C00;
+}
 
 /* CONTROLLA SE E' GIUSTO, breadcrumb li a e :hover 
 Add a color to all links inside the list 
